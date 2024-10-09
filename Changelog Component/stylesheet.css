@@ -1,187 +1,95 @@
-/* Default styles for small screens */
 body{
-    margin: 5%
-}
-.menu{
-    display: flex;
-    flex-direction: row ;
-    justify-content: space-between;
-}
-*{
-    font-family: 'Arial', sans-serif ;
-    font-weight: bold ;
-}
-ul{
-    list-style-type: none;
-    padding: 0;
-}
-ul li::before{
-    content: "-  ";
+    justify-content: center;
+    align-content: center;
+    border: 2px solid black;
+    margin: 4%;
+    border-radius: 10%;
 }
 header{
-    border: 2px solid black;
-    padding: 25px;
-}
-button{
-    background: none;
-    border: none;
-    color: #007bff;
-    padding: 2px 2px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.box{
-    margin-bottom: 0;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    display: flex ;
-    flex-direction: row;
-}
-.box > *{
-    border-right: 2px solid black;
-    padding-bottom: 3%;
-}
-.box-projects{
-    width: 35%
-}
-.box-projects > * {
-    padding-left: 7%;
-    padding-right: 1.5%;
-    padding-top: 6%;
-    border-top: 2px solid black;
-}
-.box-projects-p1 {
-    border: none;
-    padding-left: 7%;
-    padding-right: 1.5%;
-    padding-top: 6%;}
 
-.work-experience > *{
-    border-top: none;
-    padding-left: 5%;
-    padding-right: 1.5%;
-    padding-top: 0%;
-}
-.opensource-work{
-    padding-left: 5%;
-    padding-right: 1.5%;
-    padding-top: 0%;
-}
-.education > *{
-    padding-left: 5%;
-    padding-right: 1.5%;
-    padding-top: 0%;
-}
-.comments > *{
-    border: 2px solid black;
-    margin: 2%;
-    border-radius: 40px;
-}
-.comments > * > *{
-    margin: 5%;
-    padding: 10px;
-}
-.commenter{
-    margin-top: 5%;
-    margin-bottom: 10%;
-    color: gray;
-}
-h3{
-    font-family: 'Pacifico', cursive;
-    color: forestgreen;
-}
-a{
-    text-decoration: none;
-}
-.main-title{
-    font-family: 'Pacifico', cursive;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 3%;
+    align-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
-.main-title > h1{
-    font-size: 60px;
+header > *{
     font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+header > p{
+    color: #7e7d7d;
+    margin-right: 3%;
+    margin-left: 3%;
 
 }
-.prime-bubble{
-    margin-left: 7%;
+footer{
+    margin-bottom: 10%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
 }
-/* Styles for large screens */
-@media (max-width: 768px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 10px;
-    }
-    body{
-        margin: 5px;
-    }
-    .mmmd{
-        color: yellow;
-    }
-    .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .menu > *{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+.main-changelog{
+    display: flex;
+    flex-direction: row;
+}
+.main-changelog > li::marker{
+    font-size: 5em;
+}
+.date{
+    margin: 0 30px 0 0;
+}
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 5px;
+}
+*{
+    font-family: 'Arial', sans-serif;
+}
+td {
 
-    .main-title{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .main-title > h1{
-        font-size: 28px;
+    padding: 20px;
+    margin: 10px 20% 10px 10px;
+}
+.vertical{
+    border-left: 2px solid black;
+    position: relative;
+    font-weight: bold;
 
-        font-family: 'Pacifico', cursive;
-        text-align: center;
-    }
-    .main-title > p{
+}
+.vertical::before {
+    font-family: "Times New Roman";
+    content: ".";
+    position: absolute;
+    left: -17px; /* Adjust this value to position the dot */
+    top: -82px;
+    font-size: 130px; /* Adjust the font size as needed */
+    color: black; /* Dot color */
+}
+.table-div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.date{
+    font-weight: bold;
+    text-align: right;
+    color: #7e7d7d;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+.date::after {
+    content: "    ";
+}
 
-    }
-    .box{
-        display: flex ;
-        flex-direction: column;
-    }
-    .box-projects{
-        width: auto;
-    }
-    .box-projects > *{
-        text-align: center;
-    }
-    .box > .box-projects > *{
-        padding-left: 0%;
-        padding-right: 0%;
-        border-top: 2px solid black;
-    }
-    .work-experience {
-        border-top: 2px solid black;
-    }
-    .work-experience > h3{
-        text-align: center;
-        padding: 0 2% 0 0;
-    }
-    .education > h3 {;
-        border-top: 2px solid black;
-        text-align: center;
-        padding: 3% 2% 0 0;
-    }
-    .bubble{
-        display: none;
-    }
-    .prime-bubble{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+button{
+    background-color: #1c1c1c;
+    color: white;
+    padding: 2% 4% 2% 4%;
+    border-radius: 15px;
+    font-weight: bold;
+
 }
