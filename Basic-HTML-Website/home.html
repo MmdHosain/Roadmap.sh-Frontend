@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      *{
+        font-family: 'Arial', sans-serif ;
+        font-weight: bold ;
+      }
+      ul{
+        list-style-type: none;
+        padding: 0;
+      }
+      ul li::before{
+        content: "-  ";
+      }
+      header{
+        border: 2px solid black;
+        padding: 25px;
+      }
+      button{
+        background: none;
+        border: none;
+        color: #007bff;
+        padding: 2px 2px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .box > *{
+        border-right: 2px solid black;
+        padding-bottom: 3%;
+      }
+      .box > .box-projects > *{
+        padding-left: 7%;
+        padding-right: 1.5%;
+        padding-top: 6%;
+        border-top: 2px solid black;
+
+      }
+      .box > .work-experience > *{
+        padding-left: 5%;
+        padding-right: 1.5%;
+        padding-top: 0%;
+      }
+      .box > .education > *{
+        padding-left: 5%;
+        padding-right: 1.5%;
+        padding-top: 0%;
+      }
+      .comments > *{
+        border: 2px solid black;
+        margin: 2%;
+        border-radius: 40px;
+      }
+      .comments > * > *{
+        margin: 5%;
+        padding: 10px;
+      }
+      .commenter{
+        margin-top: 5%;
+        margin-bottom: 10%;
+        color: gray;
+      }
+      h3{
+        font-family: 'pacifo';
+        color: forestgreen;
+      }
+      a{
+        text-decoration: none;
+      }
+    </style>
+</head>
+<body style="margin: 5%">
+
+  <header>
+    <div STYLE="display: flex;flex-direction: row ;  justify-content: space-between;">
+      <div style="margin-top: 0px">
+        <h2 style="margin-top: 0px">
+          MmdHosain
+        </h2>
+      </div>
+      <div style="margin-right: 0; flex-direction: row">
+        <button>Home</button>
+        /
+        <button>Projects</button>
+        /
+        <button>Articles</button>
+        /
+        <button>Contact</button>
+      </div>
+    </div>
+    <div style="display: flex;flex-direction: column; justify-content: center; align-items: center;">
+      <h1 style="font-size: 60px;font-family: 'pacifo'">FRONTEND DEVELOPER</h1>
+      <p style="color: gray">HTML only with proper layout, no styling</p>
+      <br><br>
+    </div>
+  </header>
+  <div class = "box"; STYLE="margin-bottom: 0; border-left: 2px solid black;border-bottom: 2px solid black; display: flex ;flex-direction: row">
+    <div class="box-projects" style="width: 35%">
+      <h3 STYLE="border-top: none; padding-top: 0">Projects</h3>
+      <p style="border-top: none">HTML Only Portfolio</p>
+      <p style="border-top: 2px solid black">Calculator</p>
+      <p>Quiz App</p>
+      <p>Countdown Timer</p>
+      <p>Product Upcoming Page</p>
+    </div>
+    <div class="work-experience" >
+      <div style="border-bottom: 2px solid black; padding-bottom: 4%">
+        <h3>Work Experience</h3>
+        <h4>roadmap.sh</h4>
+        <p>Solved all the frontend projects</p>
+        <a href="roadmap.sh/u/mmdhosain" target="_blank">Visit my Profile</a>
+      </div>
+      <div class="opensource-work">
+        <h4>OpenSource Work</h4>
+        <p>Contributed to 50 open source projects. Made my own projects with 200 GitHub Stars.</p>
+        <a href="https://github.com/MmdHosain/" target="_blank">Visit my GitHub Profile</a>
+      </div>
+
+    </div>
+    <div class="education">
+      <h3>Education</h3>
+      <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+      <p>Courses I took:</p>
+      <ul>
+        <li>Object Oriented Programming</li>
+        <li>Data Structures and Algorithms</li>
+        <li>Web Engineering</li>
+        <li>Artificial Intelligence</li>
+        <li>Human Computer Interaction</li>
+        <li>Computer Graphics</li>
+        <li>Database Management Systems</li>
+        <li>Distributed Database Systems</li>
+        <li>Discrete Mathematics</li>
+      </ul>
+    </div>
+  </div>
+  <footer style="border-bottom: 2px solid black;border-right: 2px solid black;border-left: 2px solid black">
+    <h3 style="margin: 0;padding: 4%">Reviews from my Teachers</h3>
+    <div class="comments" STYLE="display: flex;flex-direction: row ">
+      <div style="margin-left: 7%">
+        <p>“mmdhosain was a brilliant student; always stood out with his assignments.”</p>
+        <p class="commenter">Jane Doe, Assistant Professor</p>
+      </div>
+      <div>
+        <p>“
+          “mmdhosain was an exceptional scholar; consistently excelled in project work.””</p>
+        <p class="commenter">Alex Smith, head Professor</p>
+      </div>
+      <div style="margin-right: 7%">
+        <p>“mmdhosain was a top-performing student; notable fo r his innovative essays.”</p>
+        <p class="commenter">Emily Johnson, teacher assistant</p>
+      </div>
+    </div>
+    <h3 style="display: flex; justify-content: center; align-items: center;">© all rights reserved 2025</h3>
+  </footer>
+</body>
+</html>
