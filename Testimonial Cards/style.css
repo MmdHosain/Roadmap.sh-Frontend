@@ -1,0 +1,181 @@
+
+* {
+    font-family: 'Avenir Next Rounded Pro', sans-serif;
+    font-weight: bold;
+}
+body{
+    padding: 2%;
+}
+.top {
+    display: flex;
+    flex-direction: row;
+}
+.comment-1 {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 15px 0;
+    border-radius: 10px;
+
+}
+.comment-1 .p1{
+    font-size: 2vw;
+}
+.comment-1 .p2{
+    font-size: 2vw;
+    margin-top: 10%;
+    margin-bottom: 0px;
+}
+.comment-1:after {
+    content: '';
+    position: relative;
+    bottom: -35px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+.first .writer{
+    margin-top: 4vw;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+}
+.first .writer .text{
+    padding: 10px;
+}
+.first .writer .text .p1{
+    font-size: 3vw;
+    margin-bottom: 7%;
+}
+.first .writer .text .p2{
+    font-size: 2vw;
+    font-family: Pacifico;
+    font-weight: bold;
+}
+
+.person-1{
+    max-width: 20vw;
+    max-height: 20vw;
+    margin-right: 4%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.comment-2{
+    border: 2px solid black;
+    border-radius: 5%;
+    border-radius: 20px;
+    margin-left: 2%;
+    padding: 20px;
+}
+.comment-2 .p1{
+    font-size: 3vw;
+}
+.comment-2 .writer{
+    margin-top: 7%;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+}
+.comment-2 .writer .text{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10px;
+}
+.comment-2 .writer .text .p1{
+    font-size: 2.5vw;
+    margin-bottom: 7%;
+}
+.comment-2 .writer .text .p2{
+    font-size: 2vw;
+    font-family: Pacifico;
+    font-weight: bold;
+}
+
+.person-2{
+    height: 20vw;
+    width: 20vw;
+    margin-right: 4%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+p {
+    margin: 0;
+}
+.middle{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.person-3{
+    height: 25vw ;
+    margin-right: 2%;
+    border-radius: 5%;
+    object-fit: cover;
+}
+.comment-3{
+    background-color: #1b1d24;
+    color: #fff;
+    padding: 2.5vw;
+    border-radius: 10px;
+    position: relative;
+    height: 20vw;
+}
+.star{
+    max-width: 3vw;
+    margin-right: -7px
+}
+.comment-3 .p1{
+    font-size: 4vw;
+    margin: 1%;
+}
+.comment-3 .p2{
+    color: #9d9d9d;
+    font-size: 3vw;
+    margin: 1%;
+}
+.comment-3 .p3{
+    margin: 1%;
+    font-size: 2vw;
+}
+.bottom{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2vw;
+}
+.bottom .p1{
+    font-size: 2vw;
+}
+.bottom > div > p{
+    text-align: center;
+    font-size: 2.5vw;
+}
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-images {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.side-image{
+    border-radius: 50%;
+    width: 12vw;
+    height: 12vw;
+    opacity: 0.5;
+    transform: scale(0.8);
+}
+
+.center-image{
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
